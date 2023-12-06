@@ -34,4 +34,16 @@ class userAPI {
     }
   }
 
+  // 권한 변경
+  static Future<bool> changeRole(int Id) async {
+    final url = Uri.parse('$baseUrl/user/role/$Id');
+    final response = await http.put(url);
+
+    if (response.statusCode == 200) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }
