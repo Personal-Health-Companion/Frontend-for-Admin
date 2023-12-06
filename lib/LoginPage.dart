@@ -51,7 +51,7 @@ class _LoginPanelState extends State<LoginPanel> {
         children: [
           SizedBox(height: 40,),
           Container(
-              child: Image(image: AssetImage('assets/images/mainLogo_white1.png'))
+              child: Image(image: AssetImage('assets/images/mainLogo_red.png'))
           ),
           SizedBox(height: 20,),
           Row(
@@ -103,6 +103,9 @@ class _LoginPanelState extends State<LoginPanel> {
           Container(
             height: 56,
             child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Color(0xFF993333), // Background color
+              ),
               onPressed: () async {
                 var userID = IDController.text;
                 var userPW = PWController.text;
@@ -125,7 +128,7 @@ class _LoginPanelState extends State<LoginPanel> {
               child: const Text('입장하기',
                 style: TextStyle(
                   fontSize: 20,
-                  color: Colors.black87,
+                  color: Colors.white,
                 ),
               ),
             ),
