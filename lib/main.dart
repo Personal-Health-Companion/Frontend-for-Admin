@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFFa9d18e)),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFF660000)),
         useMaterial3: true,
         fontFamily: 'GowunDodum',
       ),
